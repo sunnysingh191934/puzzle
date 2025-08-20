@@ -1,0 +1,9 @@
+.blank {
+  display: inline-block;
+  width: 20px;
+  margin: 0 2px;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+

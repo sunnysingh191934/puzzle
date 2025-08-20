@@ -1,0 +1,276 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+.word-search-container {
+  padding: 20px 0;
+  text-align: center;
+}
+
+/* Grid base (desktop default) */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(14, 40px);
+  grid-gap: 4px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.cell {
+  width: 40px;
+  height: 40px;
+  background: #f0f0f0;
+  line-height: 40px;
+  text-align: center;
+  border: 1px solid #ccc;
+  font-weight: bold;
+  cursor: pointer;
+  user-select: none;
+  transition: background 0.2s;
+}
+
+.cell.selected {
+  background: #8ef;
+}
+
+.message {
+  font-size: 1.2rem;
+  color: green;
+  margin-top: 10px;
+  animation: fadeOut 1.5s ease-in-out;
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+/* Word list */
+ul {
+  margin: 10px auto;
+  width: 80%;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap; /* ✅ small screens wrap */
+  justify-content: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    148deg,
+    rgba(0, 156, 222, 1) 9%,
+    rgba(91, 194, 231, 1) 28%,
+    rgba(100, 204, 201, 1) 42%,
+    rgba(71, 10, 104, 1) 71%
+  );
+}
+
+.maingrid {
+  background: url(./assets/heart.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: repeat-x;
+}
+
+/* ✅ Responsive Screens */
+
+/* Tablets (max-width 992px) */
+@media (max-width: 992px) {
+  .grid {
+    grid-template-columns: repeat(14, 30px);
+    grid-gap: 3px;
+  }
+
+  .cell {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 0.9rem;
+  }
+
+  .message {
+    font-size: 1rem;
+  }
+}
+
+/* Mobiles (max-width 600px) */
+@media (max-width: 600px) {
+  .grid {
+    grid-template-columns: repeat(14, 22px);
+    grid-gap: 2px;
+  }
+
+  .cell {
+    width: 22px;
+    height: 22px;
+    line-height: 22px;
+    font-size: 0.7rem;
+  }
+
+  ul {
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8rem;
+  }
+
+  .message {
+    font-size: 0.9rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* General Page Styling */
+.save-container {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: #009CDE;
+  background: linear-gradient(148deg,rgba(0, 156, 222, 1) 9%, rgba(91, 194, 231, 1) 28%, rgba(100, 204, 201, 1) 42%, rgba(71, 10, 104, 1) 71%);
+
+  min-height: 94.6vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  color: #2d3748;
+}
+
+/* Hero Section */
+.save-hero {
+  text-align: center;
+  margin-bottom: 30px;
+  animation: fadeInDown 1.2s ease;
+}
+
+.save-hero h1 {
+  font-size: 2.5rem;
+  color: #e53e3e;
+  margin: 0;
+}
+
+.save-hero h2 {
+  font-size: 1.8rem;
+  color: #2b6cb0;
+  margin: 10px 0;
+}
+
+.save-hero .subtitle {
+  font-size: 1rem;
+  color: #4a5568;
+  font-style: italic;
+}
+
+/* Event Details */
+.save-details {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.detail-box {
+  display: flex;
+  align-items: center;
+  background: #ffffff;
+  padding: 12px 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.detail-box:hover {
+  transform: scale(1.05);
+}
+
+.detail-box .icon {
+  color: #2b6cb0;
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+/* Highlights */
+.save-highlights {
+  text-align: center;
+  margin-bottom: 30px;
+  width: 100%;
+  max-width: 800px;
+}
+
+.save-highlights h3 {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+  color: #1a202c;
+}
+
+.highlight-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+}
+
+.highlight-card {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.highlight-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 18px rgba(0, 0, 0, 0.15);
+}
+
+.highlight-icon {
+  font-size: 2rem;
+  color: #e53e3e;
+  margin-bottom: 10px;
+}
+
+/* Footer */
+.save-footer {
+  margin-top: auto;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #718096;
+  padding: 20px 0;
+}
+
+.save-footer .tagline {
+  font-size: 1rem;
+  color: #2b6cb0;
+  margin-bottom: 5px;
+  font-weight: 500;
+  font-style: italic;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
