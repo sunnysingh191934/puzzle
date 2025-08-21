@@ -1,10 +1,14 @@
-*{
+html, body {
+  overscroll-behavior: none;
+  height: 100%;
   margin: 0;
   padding: 0;
 }
 .word-search-container {
   padding: 20px 0;
   text-align: center;
+   overscroll-behavior: none;
+
 }
 
 /* Grid base (desktop default) */
@@ -116,7 +120,7 @@ ul {
   }
 
   ul {
-    flex-direction: column;
+    flex-direction: flex;
     align-items: center;
     font-size: 0.8rem;
   }
