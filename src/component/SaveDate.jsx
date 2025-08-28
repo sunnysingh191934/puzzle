@@ -47,7 +47,7 @@ END:VCALENDAR
       <header className="save-hero">
         <h1 className="heading"> <i> Finally the wait is over... </i></h1>
         
-        <p className="subtitle"> <strong> LAUNCHING THE WORLD FIRST DUAL CHAMBER LEADLESS PACEMAKER AVEIR™ DR IN INDIA</strong></p>
+        <p className="subtitle"> <strong> LAUNCHING THE WORLD'S FIRST DUAL CHAMBER LEADLESS PACEMAKER AVEIR™ DR IN INDIA</strong></p>
       </header>
       {/* Event Details */}
       <section className="save-details">
