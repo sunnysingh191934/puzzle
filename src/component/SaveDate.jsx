@@ -1,4 +1,5 @@
 import React from "react";
+import '../wordpuzzle.css';
 import {
   FaCalendarAlt,
   FaClock,
@@ -9,10 +10,10 @@ import {
   FaArrowCircleUp,
 } from "react-icons/fa";
 
-import heart from '../assets/heart.svg'
-import loop from '../assets/cycle.svg'
-import recycle from '../assets/recycling.svg'
-import pacemaker from '../assets/pacemaker.svg'
+import heart from '../assets/heart1.png'
+import loop from '../assets/cardiac.png'
+import recycle from '../assets/helix.png'
+import pacemaker from '../assets/machine.png'
 
 export default function SaveDate() {
 
@@ -44,20 +45,19 @@ END:VCALENDAR
     <div className="save-container">
       {/* Hero Section */}
       <header className="save-hero">
-        <h1>Save The Date</h1>
-        <h2>AVEIR™ DR</h2>
-        <p className="subtitle">The World’s First Dual-Chamber Leadless Pacemaker</p>
+        <h1 className="heading"> <i> Finally the wait is over... </i></h1>
+        
+        <p className="subtitle"> <strong> LAUNCHING THE WORLD FIRST DUAL CHAMBER LEADLESS PACEMAKER AVEIR™ DR IN INDIA</strong></p>
       </header>
-
       {/* Event Details */}
       <section className="save-details">
         <div className="detail-box">
           <FaMapMarkerAlt className="icon" />
-          <p>Aerocity</p>
+          <p>New Delhi</p>
         </div>
         <div className="detail-box">
           <FaCalendarAlt className="icon" />
-          <p>28th & 29th September 2025</p>
+          <p>3rd October 2025</p>
         </div>
         <div className="detail-box">
           <FaClock className="icon" />
@@ -82,24 +82,30 @@ END:VCALENDAR
       </button>
       </section>
 
+
+      <div className="poweredby">
+        <p className="tagline">Powered by i2i™ Communication, AVIER™ DR Offers:</p>
+      </div>
+
+      
       {/* Highlights */}
       <section className="save-highlights">
-        <h3>Key Highlights</h3>
+        
         <div className="highlight-grid">
           <div className="highlight-card">
-            <img src={heart} alt="" />
+            <img src={heart} alt="" width={100} />
             <p>Beat-to-beat synchrony</p>
           </div>
           <div className="highlight-card">
-            <img src={loop} alt="" />
+            <img src={loop} alt="" width={100} />
             <p>Longer life</p>
           </div>
           <div className="highlight-card">
-            <img src={recycle} alt="" width={150} />
+            <img src={recycle} alt="" width={100} />
             <p>Retrievability</p>
           </div>
           <div className="highlight-card">
-            <img src={pacemaker} alt="" width={150} />
+            <img src={pacemaker} alt="" width={100} />
             <p>Upgradability</p>
           </div>
         </div>
@@ -107,7 +113,7 @@ END:VCALENDAR
 
       {/* Footer */}
       <footer className="save-footer">
-        <p className="tagline">Powered by i2i™ Communication</p>
+      
         <p>For internal use only</p>
       </footer>
     </div>

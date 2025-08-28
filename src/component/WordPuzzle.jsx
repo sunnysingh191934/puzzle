@@ -1,15 +1,15 @@
 import React, { useState } from 'react';
 import '../wordpuzzle.css';
 
-const WORDS = ['THE', 'WORLD', 'FIRST', 'DUAL', 'CHAMBER', 'LEADLESS', 'PACEMAKER','AVEIRDR', 'LAUNCHING', 'ON', 'TWENTYEIGHT', 'SEPTEMBER' ];
+const WORDS = ['LAUNCHING', 'THE', 'WORLD', 'FIRST', 'DUAL', 'CHAMBER', 'LEADLESS','PACEMAKER', 'AVEIRDR', 'IN', 'INDIA', ];
 const GRID = [
-  ['O','L','E','T','O','P','A','S','F','H','J','P','M','N'],
+  ['I','L','E','T','O','P','A','S','F','H','J','P','M','N'],
   ['N','A','O','G','J','L','F','D','R','C','G','A','Q','K'],
   ['D','U','A','L','X','A','I','H','W','H','D','C','L','R'],
   ['O','N','W','T','W','O','R','L','D','A','U','E','S','V'],
   ['L','C','U','I','H','P','S','N','O','M','O','M','P','Z'],
   ['U','H','L','N','C','N','T','H','E','B','D','A','G','Y'],
-  ['S','I','S','E','P','T','E','M','B','E','R','K','F','X'],
+  ['S','I','I','N','D','I','A','M','B','E','R','K','F','X'],
   ['A','N','K','A','V','E','I','R','D','R','V','E','C','T'],
   ['H','G','I','H','F','U','T','U','V','A','B','R','D','W'],
   ['L','O','A','D','G','T','U','Q','R','U','N','I','O','B'],
@@ -79,8 +79,9 @@ export default function WordPuzzle({ onComplete }) {
       onTouchEnd={handleEnd}
       onTouchMove={handleTouchMove}
     >
-      <p>Disclaimer: Open in your Desktop/Laptop for Better Experience.</p>
-      <h2 style={{marginTop:"20px"}}>Find These Words:</h2>
+      <h1 className='text-2xl'>Finally, The wait is over…</h1>
+      <p></p>
+      <p className='  '  style={{marginTop:"20px", fontSize: "15px"}}>Disclaimer: Decode the puzzle to know the exciting news. <br />After decoding the puzzle, don’t share the answer with anyone.</p>
       <ul>
         {WORDS.map((word) => (
           <li key={word}>
