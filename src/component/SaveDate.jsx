@@ -45,9 +45,9 @@ END:VCALENDAR
     <div className="save-container">
       {/* Hero Section */}
       <header className="save-hero">
-        <h1 className="heading"> <i> Finally the wait is over... </i></h1>
+        <h1 className="heading"> <i> LET’S SET THE PACE </i></h1>
         
-        <p className="subtitle"> <strong> LET’S SET THE PACE, AVEIR™ DR IS LAUNCHING IN INDIA</strong></p>
+        <p className="subtitle"> <strong> AVEIR™ DR IS LAUNCHING IN INDIA</strong></p>
       </header>
       {/* Event Details */}
       <section className="save-details">
