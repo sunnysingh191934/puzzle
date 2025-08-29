@@ -4,11 +4,11 @@ import '../wordpuzzle.css';
 const WORDS = ['LAUNCHING', 'THE', 'WORLDS', 'FIRST', 'DUAL', 'CHAMBER', 'LEADLESS','PACEMAKER', 'AVEIRDR', 'IN', 'INDIA', ];
 const GRID = [
   ['I','L','E','T','O','P','A','S','F','H','J','P','M','N'],
-  ['N','A','O','G','J','L','F','D','R','C','G','A','Q','K'],
-  ['D','U','A','L','X','A','I','H','W','H','D','C','L','R'],
+  ['N','A','O','G','J','F','M','D','R','C','G','A','Q','K'],
+  ['D','U','A','L','X','I','I','H','W','H','D','C','L','R'],
   ['O','N','W','W','O','R','L','D','S','A','U','E','S','V'],
-  ['L','C','U','I','H','P','S','N','O','M','O','M','P','Z'],
-  ['U','H','L','N','C','N','T','H','E','B','D','A','G','Y'],
+  ['L','C','U','I','H','S','S','N','O','M','O','M','P','Z'],
+  ['U','H','L','N','C','T','T','H','E','B','D','A','G','Y'],
   ['S','I','I','N','D','I','A','M','B','E','R','K','F','X'],
   ['A','N','K','A','V','E','I','R','D','R','V','E','C','T'],
   ['H','G','I','H','F','U','T','U','V','A','B','R','D','W'],
